@@ -1,0 +1,56 @@
+body {
+  background: #5c4dff;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.tree-layer {
+  width: 0;
+  height: 0;
+  border-left: 120px solid transparent;
+  border-right: 120px solid transparent;
+  border-bottom: 80px solid green;
+  margin: -15px auto;
+}
+
+.tree-layer:nth-child(2) {
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 100px solid green;
+}
+
+.tree-layer:nth-child(3) {
+  border-left: 180px solid transparent;
+  border-right: 180px solid transparent;
+  border-bottom: 120px solid green;
+}
+
+.trunk {
+  width: 60px;
+  height: 80px;
+  background: brown;
+  margin: 0 auto;
+}
+
+.star {
+  font-size: 100px;
+  color: gold;
+  margin-bottom: 0px;
+}
+
+.ornament {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.red { background: red; }
+.yellow { background: yellow; }
+.orange { background: orange; }
+
+.tree-container {
+  position: relative;
+  width: 400px;   
+  margin: 0 auto;
+}
