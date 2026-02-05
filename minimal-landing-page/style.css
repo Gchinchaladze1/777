@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+
+:root {
+    --primary: #4caf4f;
+    --white: #FFFFFF;
+    --nav-link: #4D4D4D;
+    --silver: #F5F7FA;
+    --neutral-silver: #F5F7FA;
+    --neutral-grey: #717171;
+    --neutral-d-grey: #4D4D4D;
+
+    --main-headline-size: 64px;
+
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+/* colors START*/
+.bg-primary {
+    background-color: var(--primary);
+}
+.bg-silver {
+    background-color: var(--silver);
+}
+.bg-transparent {
+    background-color: transparent;
+}
+.c-primary {
+    color: var(--primary);
+}
+.c-white {
+    color: var(--white);
+}
+/* colors END*/
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    color: var(--neutral-d-grey);
+}
+section p {
+    color: var(--neutral-grey);
+}
+
+header {
+    & .header-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-block: 30px;
+        &  .logo {
+            & a {
+                & img {
+                    max-width: 140px;
+                    height: auto;
+                    display: block;
+            }
+            }
+        }
+        &  .nav-cta-wrapper {
+                display: flex;
+                align-items: center;
+                gap: 100px;
+            & .nav-links {
+                list-style: none;
+                display: flex;
+                gap: 50px;
+                padding-block: 5px;
+                & a {
+                    text-decoration: none;
+                    color: var(--nav-link);
+                    text-transform: capitalize;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+            & .cta {
+                display: flex;
+                gap: 8px;
+                & button {
+                    transition-duration: .3s;
+                    &:first-child {
+                            outline: 1px solid var(--primary);
+                        &:hover {
+                            /* outline: none; */
+                            background-color: var(--primary);
+                            color: var(--white);
+                        }
+                    }
+                    &:last-child {
+                        &:hover {
+                            background-color: transparent;
+                            color: var(--primary);
+                            outline: 1px solid var(--primary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.lessons-insights-section {
+    padding-block: 96px;
+    & .lessons-insights-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & .text-content {
+            max-width: 650px;
+            color: var(--nav-link);
+            & h1 {
+                font-size: var(--main-headline-size);
+                font-weight: 600;
+                & span {
+                    color: var(--primary);
+                }
+            }
+            & p {
+                margin-top: 16px;
+                margin-bottom: 32px;
+            }
+        }
+        & .image-content {
+            width: 390px;
+            & img {
+                width: 100%;
+            }
+        }
+        
+    } 
+
+}
+  
+
+
+
+
+.our-clients {
+    & h2 {
+        text-align: center;
+    }
+    & p {
+        text-align: center;
+    }
+    &  .client-logos {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 24px;
+    }
+}
+.manage-comunity {
+    & h2 {
+        margin-inline: auto;
+        text-align: center;
+        max-width: 540px;
+    }
+    & .container > p {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    & .cards-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & article {
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & img {
+                width: 65px;
+            }
+            & h3 {
+                font-size: 28px;
+                line-height: 36px;
+                text-align: center;
+                margin-top: 16px;
+                margin-bottom: 8px;
+            }
+            & p {
+                text-align: center;
+            }
+        }
+    }
+}
